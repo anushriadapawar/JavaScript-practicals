@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <label for="num">Enter a number:</label>
+            </td>
+            <td></td>
+            <td>
+                <input type="number" id="num">
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="checkNumber()">Check</button>
+            </td>
+        </tr>
+    </table>
+
+    <p id="output"></p>
+
+    <script>
+        function checkNumber() {
+            let number = parseInt(document.getElementById("num").value);
+            let result = "";
+
+            if (number > 0) {
+                result = "The number is positive.";
+            }
+            else {
+                result = "The number is negative.";
+            }
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

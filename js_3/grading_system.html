@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    <input id = "marks" type="number" placeholder="Enter marks"> <br><br>
+    <button class="btn btn-primary" onclick="grade()">See Grade</button> <br><br>
+    <div id="result"></div>
+    <script>
+        let marksEl = document.getElementById("marks");
+        let resultEl = document.getElementById("result");
+
+        function grade(){
+            let m = marksEl.value;
+            
+            if (m >= 90 && m <= 100) {
+                resultEl.textContent = "A";
+            } else if (m >= 80 && m < 90) {
+                resultEl.textContent = "B";
+            } else if (m >= 70 && m < 80) {
+                resultEl.textContent = "C";
+            } else if (m >= 60 && m < 70) {
+                resultEl.textContent = "D";
+            } else if (m >= 50 && m < 60) {
+                resultEl.textContent = "E";
+            } else{
+                resultEl.textContent = "F";
+            }
+        }
+    </script>
+</body>
+</html>

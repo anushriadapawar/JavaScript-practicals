@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script>
+        window.onload = function() {
+            alert("Welcome to SIT Nagpur!");
+        };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <script>
+    const userEnvInfo = {
+      userAgent: navigator.userAgent,
+      browserLanguage: navigator.language,
+      screenResolution: `${screen.width}x${screen.height}`,
+      windowSize: `${window.innerWidth}x${window.innerHeight}`,
+      timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+    };
+
+    console.log("User Environment Info:");
+    console.table(userEnvInfo);
+  </script>
+    <div class="main_cont">
+        <header>
+            SYMBIOSIS INSTITUTE OF TECHNOLOGY
+        </header>
+        <div class="link">
+            <a href="Student_details.html">Student Details</a>
+            <br>
+            <a href="student_registration_form.html">Student Registration Form</a>
+        </div>
+        <footer></footer>
+    </div>
+    
+</body>
+</html>
