@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development",
+    "icon": "💻",
+    "description": "Learn HTML, CSS, and JavaScript to build responsive, real-world web projects.",
+    "duration": "8 weeks",
+    "level": "Beginner to Intermediate"
+  },
+  {
+    "id": 2,
+    "title": "Data Science",
+    "icon": "📈",
+    "description": "Master Python, machine learning, and data visualization using real-world datasets.",
+    "duration": "10 weeks",
+    "level": "Intermediate"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing",
+    "icon": "🚀",
+    "description": "Learn SEO, analytics, and advertising strategies that drive online growth.",
+    "duration": "6 weeks",
+    "level": "All Levels"
+  }
+]

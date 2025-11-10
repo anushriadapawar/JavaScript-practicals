@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses | E-Learnify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">E-Learnify</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="btn-primary">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero courses-hero">
+    <div class="hero-content">
+      <h1>Explore Our Courses</h1>
+      <p>Choose from a wide range of expert-led online courses to boost your skills.</p>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses" style="padding:4rem 7%; background:var(--bg);">
+    <h2 style="text-align:center; color:var(--primary-dark);">Popular Courses</h2>
+
+    <!-- Search bar -->
+    <div style="text-align:center; margin:1.5rem 0;">
+      <input type="text" id="searchInput" placeholder="Search for a course..." 
+             style="padding:0.8rem 1rem; width:60%; border-radius:8px; border:1px solid #ccc;">
+    </div>
+
+    <!-- Course container (dynamically generated) -->
+    <div class="feature-grid" id="courseContainer" style="margin-top:2rem;">
+      <!-- Courses will be loaded dynamically via JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 E-Learnify. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="js/index.js"></script>
+  <script src="js/courses.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

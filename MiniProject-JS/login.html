@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | E-Learnify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">E-Learnify</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="btn-primary active">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero login-hero">
+    <div class="hero-content">
+      <h1>Welcome Back!</h1>
+      <p>Log in to access your personalized learning dashboard.</p>
+    </div>
+  </section>
+
+  <!-- Login Form -->
+  <section class="login-form" style="padding:4rem 7%; display:flex; justify-content:center; align-items:center; background:var(--white);">
+    <form id="loginForm" style="width:100%; max-width:400px; background:var(--bg); padding:2rem; border-radius:var(--radius); box-shadow:var(--shadow);">
+      <h2 style="text-align:center; color:var(--primary-dark); margin-bottom:1.5rem;">Login</h2>
+
+      <input type="email" id="loginEmail" placeholder="Email" required style="width:100%; padding:0.8rem; border:1px solid #ccc; border-radius:8px; margin-bottom:1rem;">
+      <input type="password" id="loginPassword" placeholder="Password" required style="width:100%; padding:0.8rem; border:1px solid #ccc; border-radius:8px; margin-bottom:1rem;">
+
+      <button type="submit" class="btn-primary" style="width:100%;">Login</button>
+      <p style="text-align:center; margin-top:1rem;">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 E-Learnify. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="js/index.js"></script>
+  <script src="js/login-validation.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>
