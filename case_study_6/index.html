@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vowel Counter & Reverser</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+    }
+    #result {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Paragraph Vowel Counter & Reverser</h2>
+  
+  <textarea id="paragraph" placeholder="Enter your paragraph here..."></textarea><br><br>
+  <button onclick="countVowelsAndReverse()">Count Vowels</button>
+
+  <div id="result">
+    <p><strong>Vowel Count:</strong> <span id="vowelCount">0</span></p>
+    <p><strong>Reversed Paragraph:</strong></p>
+    <p id="reversedText"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

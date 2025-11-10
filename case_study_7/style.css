@@ -1,0 +1,77 @@
+body {
+  text-align: center;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+#signal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+#signal {
+  width: 100px;
+  height: 250px;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.light {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #555;
+  box-shadow: 0 0 10px #222 inset;
+}
+
+.active {
+  box-shadow: 0 0 25px 5px;
+}
+
+#red-light.active {
+  background-color: red;
+}
+
+#yellow-light.active {
+  background-color: yellow;
+}
+
+#green-light.active {
+  background-color: green;
+}
+
+#buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#stop-btn {
+  background-color: red;
+  color: white;
+}
+
+#wait-btn {
+  background-color: gold;
+  color: black;
+}
+
+#go-btn {
+  background-color: green;
+  color: white;
+}
